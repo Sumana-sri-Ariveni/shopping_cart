@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sample.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const element = (
+            <div className="container">
+                <p className="main-head">
+                    SHOPPING CART <br/>
+                    <br/> 
+                    IN REACT JS  
+                    <img className="cart" src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-png-image-download-pngm-2.png"/>
+                </p>
+                <div className="right-container">
+                    <img className="react-logo" src="https://pluspng.com/img-png/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"/>
+                </div>
+                <div className="card">
+                    <div className="item">
+                        <img className="item-image" src="https://img.freepik.com/premium-photo/fresh-grapes-white-background_181303-1948.jpg?w=1480" />
+                        <p>Juicy Grapes<br/><br/>$46</p>
+                        <button className="btn">Add to Cart</button>
+                    </div>
+                    <div className="item">
+                        <img className="item-image" src="https://th.bing.com/th/id/OIP.THYG2orn_eZ0gmQJxrxTswHaFW?rs=1&pid=ImgDetMain" />
+                        <p>Red Watermelon<br/><br/>$56</p>
+                        <button className="btn">Add to Cart</button>
+                    </div>
+                    <div className="item">
+                        <img className="item-image" src="https://th.bing.com/th/id/OIP.nFhIuW4YR_1uIh47iirFiAHaG0?rs=1&pid=ImgDetMain" />
+                        <p>Juicy Apple<br/><br/>$36</p>
+                        <button className="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        )
+        ReactDOM.render(element, document.getElementById('root'));
+    </script>
+  </body>
+</html>
